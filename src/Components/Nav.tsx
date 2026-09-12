@@ -6,7 +6,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 bg-white shadow-sm z-50">
+    <nav className="sticky top-0 bg-white border border-gray-100 z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         <img src={logo} alt="Logo" className="h-13 w-50" />
 

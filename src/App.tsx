@@ -5,6 +5,7 @@ import Banner from './Components/Banner';
 import ExploreTechnologies from './Components/ExploreTechnologies/ExploreTechnologies';
 import Nav from './Components/Nav';
 import type { technologyType } from './type';
+import Footer from './Components/Footer';
 
 const techPromise = async(): Promise<technologyType[]>=> {
   const res = await fetch('/data.json');
@@ -22,8 +23,8 @@ function App() {
     <Banner />
     <Suspense fallback={<h2>Loading...</h2>}>
     <ExploreTechnologies techPromise={techPromise()} /> 
-
     </Suspense>
+    <Footer />
   </>
 
   )
