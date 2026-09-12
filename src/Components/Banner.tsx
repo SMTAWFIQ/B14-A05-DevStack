@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className='flex flex-col md:flex-row justify-between items-center container mx-auto px-4 gap-8 md:gap-5'>
         <div className='text-center md:text-left'>
-            <h2 className='text-7xl md:text-7xl font-bold'>Build Your Ideal  <br />
+            <h2 className='text-6xl md:text-7xl font-bold'>Build Your Ideal  <br />
                 <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
                     Development Stack
                 </span>
