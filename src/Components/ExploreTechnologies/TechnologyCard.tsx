@@ -1,18 +1,21 @@
 import { FaStar } from "react-icons/fa"
 import type { technologyType } from "../../type"
-import { useState, type Dispatch, type SetStateAction } from "react"
+import { type Dispatch, type SetStateAction } from "react"
 
 export interface TechnologyCardProps {
     technology: technologyType
+    selectedTechnologies: technologyType[]
     setSelectedTechnologies: Dispatch<SetStateAction<technologyType[]>>
 }
 
-export default function TechnologyCard({ technology, setSelectedTechnologies }: TechnologyCardProps) {
+export default function TechnologyCard({ technology,selectedTechnologies, setSelectedTechnologies }: TechnologyCardProps) {
     
-    const [isSelected, setIsSelected ] = useState(false)
+
+
+    const isSelected = !!selectedTechnologies.find(t=> t.id === technology.id)
 
     const handleIsSelected = () => {
-        setIsSelected(true)
+        
         setSelectedTechnologies(prevTechnologies => [...prevTechnologies, technology])
     }
 
@@ -45,10 +48,19 @@ export default function TechnologyCard({ technology, setSelectedTechnologies }: 
 
             </div>
             <div>
-                <button onClick={handleIsSelected}
-                className="bg-black text-white font-normal text-xl px-5 py-4 my-2 mt-6 w-full rounded-2xl"
-                
-                >Add to Stack</button>        
+                <button
+                    onClick={handleIsSelected}
+                    disabled={isSelected}
+                    className={`font-normal text-xl px-5 py-4 my-2 mt-6 w-full rounded-2xl transition-colors duration-200 
+                                ${
+                                    isSelected
+                                    ? "bg-gray-200 text-gray-500 cursor-not-allowed"
+                                    : "bg-gray-950 text-white hover:bg-black cursor-pointer"
+                                }`
+                            }
+                    >
+                        {isSelected ? "Added to Stack" : "Add to Stack"}
+                </button>       
             </div>
         </div>
     )

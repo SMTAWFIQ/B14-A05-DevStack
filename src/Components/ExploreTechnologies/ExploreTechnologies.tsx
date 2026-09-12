@@ -3,6 +3,7 @@ import type { technologyType } from "../../type"
 import TechnologyCard from "./TechnologyCard"
 import SelectedTechnologies from "./SelectedTechnologies"
 
+
 export interface ExploreTechnologiesProps {
     techPromise: Promise<technologyType[]>
 }
@@ -25,7 +26,7 @@ export default function ExploreTechnologies({
                 </span>
             </h2>
 
-            <p className="text-[20px] my-2 text-gray-500">
+            <p className="text-[20px] my-2 mb-9 text-gray-500">
                 Pick one technology per category to build your ideal stack.
             </p>
 
@@ -38,14 +39,19 @@ export default function ExploreTechnologies({
                             key={technology.id}
                             technology={technology}
                             setSelectedTechnologies = {setSelectedTechnologies}
+                            selectedTechnologies={selectedTechnologies}
+                            
                         />
                     ))
                 }
                 </div>
 
                 <div className="col-span-1">
-                    <SelectedTechnologies  selectedTechnologies={selectedTechnologies} />
-                </div>
+                    <SelectedTechnologies  
+                        selectedTechnologies={selectedTechnologies} 
+                        setSelectedTechnologies={setSelectedTechnologies}
+                        />
+                </div>    
 
             </div>
 
