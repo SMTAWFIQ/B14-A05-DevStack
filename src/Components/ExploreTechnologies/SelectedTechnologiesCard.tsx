@@ -39,7 +39,7 @@ export default function SelectedTechnologiesCard({ SelectedTechnology, selectedT
               
         </div>
 
-
+        
 
         </div>
         

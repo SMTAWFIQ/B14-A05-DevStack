@@ -22,10 +22,10 @@ export default function SelectedTechnologies({ selectedTechnologies, setSelected
                 </> :
                 <>
                     
-                    <h2 className="text-xl text-gray-500 my-2 ">Technology Selected</h2>
+                    <h2 className="text-xl text-gray-500 my-2 ">{selectedTechnologies.length} Technology Selected</h2>
                     {selectedTechnologies.map((SelectedTechnology) => {
                         return (
-                            <div>
+                            <div className="my-3">
                                 <SelectedTechnologiesCard
                                 key={SelectedTechnology.id}
                                 SelectedTechnology={SelectedTechnology}
@@ -37,12 +37,16 @@ export default function SelectedTechnologies({ selectedTechnologies, setSelected
                             </div>
                         )
                     })}
+
+                    <button 
+                        onClick={() => setSelectedTechnologies([])}
+                        className="border border-red-600 hover:bg-red-600 hover:text-white font-semibold text-xl text-red-500 px-5 py-2 my-2 mt-6 w-full rounded-2xl transition-colors duration-200">
+                          Remove All
+                     </button>
                     
                 </>
             }
-            <button className="border border-red-600 hover:bg-red-600 hover:text-white font-semibold text-xl text-red-500 px-5 py-2 my-2 mt-6 w-full rounded-2xl transition-colors duration-200">
-                Remove All
-            </button>
+            
         </div>
 
         
