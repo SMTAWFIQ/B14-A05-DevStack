@@ -1,4 +1,5 @@
 
+import { Suspense } from 'react';
 import './App.css'
 import Banner from './Components/Banner';
 import ExploreTechnologies from './Components/ExploreTechnologies/ExploreTechnologies';
@@ -19,7 +20,10 @@ function App() {
   <>
     <Nav />
     <Banner />
-    <ExploreTechnologies /> 
+    <Suspense fallback={<h2>Loading...</h2>}>
+    <ExploreTechnologies techPromise={techPromise()} /> 
+
+    </Suspense>
   </>
 
   )

@@ -94,7 +94,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/TailwindCSS.svg",
+    "icon": "https://cdn.simpleicons.org/tailwindcss",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Trending"
