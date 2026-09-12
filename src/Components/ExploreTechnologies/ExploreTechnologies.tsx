@@ -1,7 +1,7 @@
 import { use, useState } from "react"
 import type { technologyType } from "../../type"
 import TechnologyCard from "./TechnologyCard"
-import SelectedTechnologies from "./SelectedTechnologies"
+import SelectedTechnologies from "../Selected_Technologies/SelectedTechnologies"
 
 
 export interface ExploreTechnologiesProps {
