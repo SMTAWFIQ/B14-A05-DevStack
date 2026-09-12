@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo-text.png";
+import logo from "./logo-text.png";
 
 export default function Nav() {
 
