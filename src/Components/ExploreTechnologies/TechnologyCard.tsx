@@ -23,13 +23,13 @@ export default function TechnologyCard({ technology,selectedTechnologies, setSel
 
         <div className="border border-gray-100 rounded-2xl py-4 px-6">
 
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
                 <div >
                     <img src={technology.icon} alt="Icon" className="h-10 w-10" />
                     <h2 className="text-2xl font-semibold my-0.5">{technology.name}</h2>
                 </div>
 
-                <h3 className="font-medium text-xl ">
+                <h3 className= {`font-medium text-xl  rounded-2xl px-4 py-1 text-center  ${technology.badgeColor}`} >
                     {technology.badge}
                  </h3>
 

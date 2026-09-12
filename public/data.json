@@ -7,7 +7,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "bg-blue-100 text-blue-600"
   },
   {
     "id": "nextjs",
@@ -17,7 +18,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Fast"
+    "badge": "Fast",
+    "badgeColor": "bg-orange-100 text-orange-600"
   },
   {
     "id": "nodejs",
@@ -27,7 +29,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "bg-blue-100 text-blue-600"
   },
   {
     "id": "express",
@@ -37,7 +40,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "bg-green-100 text-green-600"
   },
   {
     "id": "mongodb",
@@ -47,7 +51,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "bg-blue-100 text-blue-600"
   },
   {
     "id": "postgresql",
@@ -57,7 +62,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Top SQL"
+    "badge": "Top SQL",
+    "badgeColor": "bg-teal-100 text-teal-600"
   },
   {
     "id": "javascript",
@@ -67,7 +73,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "bg-green-100 text-green-600"
   },
   {
     "id": "typescript",
@@ -77,7 +84,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Trending"
+    "badge": "Trending",
+    "badgeColor": "bg-purple-100 text-purple-600"
   },
   {
     "id": "python",
@@ -87,7 +95,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "bg-blue-100 text-blue-600"
   },
   {
     "id": "tailwindcss",
@@ -97,7 +106,8 @@
     "icon": "https://cdn.simpleicons.org/tailwindcss",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Trending"
+    "badge": "Trending",
+    "badgeColor": "bg-purple-100 text-purple-600"
   },
   {
     "id": "bootstrap",
@@ -107,7 +117,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
     "rating": 4.6,
     "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
+    "badge": "Fast",
+    "badgeColor": "bg-orange-100 text-orange-600"
   },
   {
     "id": "docker",
@@ -117,7 +128,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Containers"
+    "badge": "Containers",
+    "badgeColor": "bg-cyan-100 text-cyan-600"
   },
   {
     "id": "kubernetes",
@@ -127,7 +139,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Kubernetes.svg",
     "rating": 4.7,
     "difficulty": "Advanced",
-    "badge": "Scaling"
+    "badge": "Scaling",
+    "badgeColor": "bg-red-100 text-red-600"
   },
   {
     "id": "git",
@@ -137,7 +150,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "bg-green-100 text-green-600"
   },
   {
     "id": "github",
@@ -147,6 +161,7 @@
     "icon": "https://icon.icepanel.io/Technology/svg/GitHub.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "bg-green-100 text-green-600"
   }
 ]

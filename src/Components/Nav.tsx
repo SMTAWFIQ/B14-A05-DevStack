@@ -39,7 +39,7 @@ export default function Nav() {
             <a href="">Projects</a>
             <a href="">About</a>
             <a href="">Contact</a>
-          <button className="text-gray-700  font-medium px-5 py-2 rounded-full hover:bg-gray-200 transition-colors duration-200  cursor-pointer">
+          <button className="text-gray-700 font-medium px-5 py-2 rounded-full hover:bg-[#D91B7E] hover:text-white  transition-colors duration-200  cursor-pointer">
             Sign in
           </button>
 
