@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 bg-white border border-gray-100 z-50">
       <div className="container mx-auto grid grid-cols-3 items-center px-4 py-3">
-        <button className="md:hidden order-1 text-2xl justify-self-start" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden order-1 text-2xl justify-self-start cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
 
@@ -23,10 +23,10 @@ export default function Nav() {
         </div>
 
         <div className="order-3 flex gap-2 justify-self-end items-center">
-          <button className="text-gray-700 font-medium text-sm md:text-lg px-3 md:px-5 py-1.5 md:py-2 rounded-full hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+          <button className="text-gray-700 font-medium text-sm md:text-lg px-3 md:px-5 py-1.5 md:py-2 rounded-full hover:bg-gray-100 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
             Sign In
           </button>
-          <button className="bg-[#D91B7E] text-white font-medium text-sm md:text-lg px-3 md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 transition-opacity duration-200 shadow-md cursor-pointer">
+          <button className="bg-[#D91B7E] text-white font-medium text-sm md:text-lg px-3 md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 hover:-translate-y-1 transition-all duration-300 shadow-md cursor-pointer">
             Sign Up
           </button>
         </div>
