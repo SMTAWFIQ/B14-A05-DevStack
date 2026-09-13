@@ -60,7 +60,7 @@ export default function SelectedTechnologies({
 
           <button
             onClick={() => handleRemoveAll()}
-            className="border border-red-600 hover:bg-red-600 hover:text-white font-semibold text-xl text-red-500 px-5 py-2 my-2 mt-6 w-full rounded-2xl transition-colors duration-200"
+            className="border border-brand hover:bg-brand hover:text-white font-semibold text-xl text-brand px-5 py-2 my-2 mt-6 w-full rounded-2xl transition-colors duration-200"
           >
             Remove All
           </button>

@@ -46,7 +46,7 @@ export default function SelectedTechnologiesCard({
         </div>
 
         <IoClose
-          className="text-2xl text-gray-400 hover:text-red-600 cursor-pointer"
+          className="text-2xl text-gray-400 hover:text-brand cursor-pointer"
           onClick={() => handleRemoveTechnology(SelectedTechnology)}
         />
       </div>

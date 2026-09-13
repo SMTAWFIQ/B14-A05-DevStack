@@ -41,7 +41,7 @@ export default function TechnologyCard({
       className={`border-2 rounded-2xl py-4 px-6 transition-all duration-300
     ${
       isSelected
-        ? "border-[#D91B7E] shadow-lg"
+        ? "border-brand shadow-lg"
         : "border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1"
     }`}
     >
@@ -79,7 +79,7 @@ export default function TechnologyCard({
                     transition-colors duration-200 flex items-center justify-center gap-2
                     ${
                       isSelected
-                        ? "bg-gray-200 text-[#D91B7E] font-semibold cursor-not-allowed"
+                        ? "bg-gray-200 text-brand font-semibold cursor-not-allowed"
                         : "bg-black text-white  shadow-md cursor-pointer hover:bg-gray-900 hover:shadow-xl    "
                     }`}
         >

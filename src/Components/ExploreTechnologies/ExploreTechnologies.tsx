@@ -19,14 +19,14 @@ export default function ExploreTechnologies({
   return (
     <div className="container mx-auto">
       <div className="text-center md:text-left">
-        <h2 className="text-4xl md:text-5xl font-bold">
+        <h2 className="text-3xl md:text-5xl font-bold">
           Explore{" "}
-          <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+          <span className="gradient-text bg-clip-text text-transparent">
             Technologies
           </span>
         </h2>
 
-        <p className="text-[20px] my-2 mb-9 text-gray-500">
+        <p className="text-sm md:text-[20px] my-2 mb-9 text-gray-500">
           Pick one technology per category to build your ideal stack.
         </p>
       </div>

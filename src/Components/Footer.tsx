@@ -1,9 +1,11 @@
+
 import logo from "./Header_Section/logo-text.png";
+import { GoDotFill } from "react-icons/go";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="border border-gray-100 mt-8">
+      <div className="border border-gray-200 mt-8">
         <div className="container mx-auto md:grid md:grid-cols-5 mt-5  gap-8 py-15 text-[20px]">
           {/* 1st part */}
           {/* Dev stack */}
@@ -13,9 +15,11 @@ const Footer = () => {
               Curated tools, technologies, and resources for developers building
               modern software.
             </p>
-            <div className="flex gap-4 font-semibold text-gray-600">
+            <div className="flex items-center gap-4 font-semibold text-gray-600">
               <a href="">GitHub</a>
+              <GoDotFill />
               <a href="">Twitter</a>
+              <GoDotFill />
               <a href="">LinkedIn</a>
             </div>
           </div>

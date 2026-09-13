@@ -1,2 +1,16 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+@theme {
+  --color-brand: #D91B7E;
+}
+
+@utility gradient-text {
+  background-image: linear-gradient(
+    to right,
+    #FF5722,
+    #D81B7E,
+    #7C3AED
+  );
+
+}
+
