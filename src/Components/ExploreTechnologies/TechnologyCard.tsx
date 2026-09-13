@@ -24,21 +24,23 @@ export default function TechnologyCard({
     ]);
 
     toast.success(`${technology.name} added to your stack!`, {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-    })
-
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   };
 
   return (
-    <div className="border border-gray-100 rounded-2xl py-4 px-6">
+    <div
+      className="border border-gray-100 rounded-2xl py-4 px-6 shadow-sm  hover:shadow-xl hover:-translate-y-1 
+                transition-all duration-300"
+    >
       <div className="flex justify-between items-center">
         <div>
           <img src={technology.icon} alt="Icon" className="h-10 w-10" />
@@ -74,7 +76,7 @@ export default function TechnologyCard({
                     ${
                       isSelected
                         ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                        : "bg-gray-950 text-white hover:bg-black cursor-pointer"
+                        : "bg-black text-white  shadow-md cursor-pointer hover:bg-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300   "
                     }`}
         >
           {isSelected ? (

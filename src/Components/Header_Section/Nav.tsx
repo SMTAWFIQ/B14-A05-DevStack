@@ -7,10 +7,14 @@ export default function Nav() {
 
   return (
     <nav className="sticky top-0 bg-white border border-gray-100 z-50">
-      <div className="container mx-auto flex justify-between items-center px-4 py-3">
-        <img src={logo} alt="Logo" className="h-13 w-50" />
+      <div className="container mx-auto grid grid-cols-3 items-center px-4 py-3">
+        <button className="md:hidden order-1 text-2xl justify-self-start" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
 
-        <div className="hidden md:flex gap-8 text-xl">
+        <img src={logo} alt="Logo" className="h-8 md:h-13 md:w-50  order-2 md:order-1 justify-self-center md:justify-self-start" />
+
+        <div className="hidden md:flex md:order-2 gap-8 text-xl justify-self-center">
             <a href="">Home</a>
             <a href="">Technologies</a>
             <a href="">Projects</a>
@@ -18,18 +22,14 @@ export default function Nav() {
             <a href="">Contact</a>
         </div>
 
-        <div className="hidden md:flex gap-2">
-          <button className="text-gray-700 font-medium text-lg px-5 py-2 rounded-full hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+        <div className="order-3 flex gap-2 justify-self-end items-center">
+          <button className="text-gray-700 font-medium text-sm md:text-lg px-3 md:px-5 py-1.5 md:py-2 rounded-full hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
             Sign In
           </button>
-          <button className="bg-[#D91B7E] text-white font-medium text-lg px-5 py-2 rounded-full hover:opacity-90 transition-opacity duration-200 shadow-md cursor-pointer">
+          <button className="bg-[#D91B7E] text-white font-medium text-sm md:text-lg px-3 md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 transition-opacity duration-200 shadow-md cursor-pointer">
             Sign Up
           </button>
         </div>
-
-        <button className="md:hidden text-2xl" onClick={() => setIsOpen(!isOpen)}>
-          ☰
-        </button>
       </div>
 
       {isOpen && (
@@ -39,13 +39,6 @@ export default function Nav() {
             <a href="">Projects</a>
             <a href="">About</a>
             <a href="">Contact</a>
-          <button className="text-gray-700 font-medium px-5 py-2 rounded-full hover:bg-[#D91B7E] hover:text-white  transition-colors duration-200  cursor-pointer">
-            Sign in
-          </button>
-
-          <button className="bg-[#D91B7E] text-white font-medium px-5 py-2 rounded-full hover:opacity-90 transition-opacity duration-200 shadow-md cursor-pointer">
-            Sign Up
-          </button>
         </div>
       )}
     </nav>
