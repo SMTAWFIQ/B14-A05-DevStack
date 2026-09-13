@@ -47,6 +47,6 @@ DevStack is a web app that helps developers to plan their development technologi
    (example: the empty stack message).<br>
    Conditional rendering means showing diferent UI based on the condition.In my project in "selectedTechnologies" component i check if "selectedTechnologies.length === 0". If its empty i show "No Technologies Selected Yet".  
 
-7. How do you pass data from a parent component to a child component,
-   and how does a child send something back to the parent?<br>  
+**7. How do you pass data from a parent component to a child component,
+   and how does a child send something back to the parent?** <br>  
    A parent sends data to a child using props. To send data back from child to parent, the parent passes a function as a prop. then the child call the function.In my project "setSelectedTechnologies()" is passed from (parent) "ExploreTechnologies" to (child) "TechnologyCard" and when the user click on "Add to Stack"  "TechnologyCard" calls the "setSelectedTechnologies()" to update the (parent) "ExploreTechnologies" state.
