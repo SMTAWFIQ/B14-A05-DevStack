@@ -38,8 +38,12 @@ export default function TechnologyCard({
 
   return (
     <div
-      className="border border-gray-100 rounded-2xl py-4 px-6 shadow-sm  hover:shadow-xl hover:-translate-y-1 
-                transition-all duration-300"
+      className={`border-2 rounded-2xl py-4 px-6 transition-all duration-300
+    ${
+      isSelected
+        ? "border-[#D91B7E] shadow-lg"
+        : "border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1"
+    }`}
     >
       <div className="flex justify-between items-center">
         <div>
@@ -75,8 +79,8 @@ export default function TechnologyCard({
                     transition-colors duration-200 flex items-center justify-center gap-2
                     ${
                       isSelected
-                        ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                        : "bg-black text-white  shadow-md cursor-pointer hover:bg-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300   "
+                        ? "bg-gray-200 text-[#D91B7E] font-semibold cursor-not-allowed"
+                        : "bg-black text-white  shadow-md cursor-pointer hover:bg-gray-900 hover:shadow-xl    "
                     }`}
         >
           {isSelected ? (
