@@ -37,16 +37,16 @@ export default function SelectedTechnologiesCard({
     <div>
       <div className="flex justify-between items-center py-4 px-3  border border-gray-200 rounded-2xl">
         <div className="flex gap-3">
-          <img src={SelectedTechnology.icon} alt="Icon" className="h-10 w-10" />
+          <img src={SelectedTechnology.icon} alt="Icon" className="h-8 w-8 lg:h-9 lg:w-9" />
 
           <div>
-            <h4 className="text-lg font-medium">{SelectedTechnology.name}</h4>
-            <h5 className="text-sm">{SelectedTechnology.category}</h5>
+            <h4 className="text-base lg:text-lg font-medium">{SelectedTechnology.name}</h4>
+            <h5 className="text-xs lg:text-sm">{SelectedTechnology.category}</h5>
           </div>
         </div>
 
         <IoClose
-          className="text-2xl text-gray-400 hover:text-brand cursor-pointer"
+          className="text-xl lg:text-2xl text-gray-400 hover:text-brand cursor-pointer"
           onClick={() => handleRemoveTechnology(SelectedTechnology)}
         />
       </div>

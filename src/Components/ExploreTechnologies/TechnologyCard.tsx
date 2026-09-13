@@ -38,7 +38,7 @@ export default function TechnologyCard({
 
   return (
     <div
-      className={`border-2 rounded-2xl py-4 px-6 transition-all duration-300
+      className={`border-2 rounded-2xl py-3 px-4 transition-all duration-300
     ${
       isSelected
         ? "border-brand shadow-lg"
@@ -47,19 +47,19 @@ export default function TechnologyCard({
     >
       <div className="flex justify-between items-center">
         <div>
-          <img src={technology.icon} alt="Icon" className="h-10 w-10" />
-          <h2 className="text-2xl font-semibold my-0.5">{technology.name}</h2>
+          <img src={technology.icon} alt="Icon" className="h-7 w-7" />
+          <h2 className="text-base font-semibold my-0.5">{technology.name}</h2>
         </div>
 
         <h3
-          className={`font-medium text-xl  rounded-2xl px-4 py-1 text-center  ${technology.badgeColor}`}
+          className={`font-medium text-xs rounded-full px-2 py-1 text-center  ${technology.badgeColor}`}
         >
           {technology.badge}
         </h3>
       </div>
-      <p className="my-2 text-xl text-gray-500">{technology.description} </p>
+      <p className="my-2 text-sm text-gray-500">{technology.description} </p>
 
-      <div className="flex justify-between gap-5 items-center text-xl text-gray-500 mt-6">
+      <div className="flex justify-between gap-3 items-center text-sm text-gray-500 mt-4">
         <h3 className="font-medium border border-none px-2 py-1 rounded-xl bg-gray-100 ">
           {technology.category}
         </h3>
@@ -75,7 +75,7 @@ export default function TechnologyCard({
         <button
           onClick={handleIsSelected}
           disabled={isSelected}
-          className={`font-normal text-xl px-5 py-4 my-2 mt-6 w-full rounded-2xl 
+          className={`font-normal text-base px-4 py-2 my-2 mt-4 w-full rounded-xl 
                     transition-colors duration-200 flex items-center justify-center gap-2
                     ${
                       isSelected

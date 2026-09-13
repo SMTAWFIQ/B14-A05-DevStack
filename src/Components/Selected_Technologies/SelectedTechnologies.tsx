@@ -30,10 +30,10 @@ export default function SelectedTechnologies({
 
   return (
     <div className="border border-gray-100 rounded-2xl py-4 px-6">
-      <h2 className=" text-3xl font-medium">Your Stack</h2>
+      <h2 className=" text-xl font-medium">Your Stack</h2>
       {selectedTechnologies.length === 0 ? (
         <>
-          <p className="text-xl text-gray-500 my-1 mb-6">
+          <p className="text-[14px] text-gray-500 my-1 mb-6">
             No Technologies Selected Yet
           </p>
           <p className="border border-dashed text-gray-500 text-center rounded-2xl my-2 py-5">
@@ -60,7 +60,7 @@ export default function SelectedTechnologies({
 
           <button
             onClick={() => handleRemoveAll()}
-            className="border border-brand hover:bg-brand hover:text-white font-semibold text-xl text-brand px-5 py-2 my-2 mt-6 w-full rounded-2xl transition-colors duration-200"
+            className="border border-brand hover:bg-brand hover:text-white font-semibold text-base lg:text-lg text-brand px-5 py-2 my-2 mt-6 w-full rounded-2xl transition-colors duration-200"
           >
             Remove All
           </button>
