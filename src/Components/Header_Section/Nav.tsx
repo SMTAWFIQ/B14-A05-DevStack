@@ -5,8 +5,8 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 bg-white border border-gray-200 z-50">
-      <div className="max-w-360 mx-auto grid grid-cols-3 items-center px-4 sm:px-6 lg:px-8 py-2">
+    <nav className="sticky top-0 bg-white border border-gray-100 z-50">
+      <div className="max-w-360 mx-auto grid grid-cols-3 items-center px-4 sm:px-6 lg:px-16 py-3 ">
         <button
           className="md:hidden justify-self-start text-2xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}

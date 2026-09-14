@@ -22,7 +22,7 @@ export default function SelectedTechnologiesCard({
 
     toast.info(`${SelectedTechnology.name} removed from your stack!`, {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: false,
       pauseOnHover: true,
@@ -35,13 +35,13 @@ export default function SelectedTechnologiesCard({
 
   return (
     <div>
-      <div className="flex justify-between items-center py-4 px-3  border border-gray-200 rounded-2xl">
-        <div className="flex gap-3">
-          <img src={SelectedTechnology.icon} alt="Icon" className="h-8 w-8 lg:h-9 lg:w-9" />
+      <div className="flex justify-between items-center  py-3 px-3  border border-gray-200 rounded-2xl">
+        <div className="flex gap-2 items-center">
+          <img src={SelectedTechnology.icon} alt="Icon" className="h-8 w-8 lg:h-7 lg:w-9" />
 
-          <div>
-            <h4 className="text-base lg:text-lg font-medium">{SelectedTechnology.name}</h4>
-            <h5 className="text-xs lg:text-sm">{SelectedTechnology.category}</h5>
+          <div className="">
+            <h4 className="text-base lg:text-[15px] font-medium">{SelectedTechnology.name}</h4>
+            <h5 className="text-xs lg:text-xm">{SelectedTechnology.category}</h5>
           </div>
         </div>
 

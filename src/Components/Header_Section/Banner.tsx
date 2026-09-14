@@ -2,7 +2,7 @@ import banner from './banner-stack.png'
 
 const Banner = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center max-w-360 mx-auto px-4 sm:px-6 lg:px-8 gap-8 md:gap-5'>
+    <div className=' flex flex-col md:flex-row justify-between items-center px-4 mt-5 md:mt-0 md:px-16 md:py-0 gap-8 md:gap-8'>
         <div className='text-center md:text-left'>
             <h2 className='text-4xl lg:text-6xl font-bold'>Build Your Ideal  <br />
                 <span className="gradient-text bg-clip-text text-transparent">
@@ -28,7 +28,7 @@ const Banner = () => {
         </div>
 
         <div>
-            <img src={banner} alt="Banner Image" className='w-150 h-100 md:w-330 md:h-140 lg:w-280 lg:h-160 ' />
+            <img src={banner} alt="Banner Image" className='w-150 h-100 md:w-330 md:h-120 lg:w-250 lg:h-130 ' />
         </div>
     </div>
   );

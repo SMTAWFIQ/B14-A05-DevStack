@@ -16,9 +16,9 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4 font-semibold text-gray-600">
               <a href="">GitHub</a>
-              <GoDotFill />
+              <GoDotFill className="md:hidden" />
               <a href="">Twitter</a>
-              <GoDotFill />
+              <GoDotFill className="md:hidden"/>
               <a href="">LinkedIn</a>
             </div>
           </div>

@@ -17,7 +17,7 @@ export default function SelectedTechnologies({
 
     toast.warning("All technologies removed from your stack!", {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: true,
@@ -42,7 +42,7 @@ export default function SelectedTechnologies({
         </>
       ) : (
         <>
-          <h2 className="text-xl text-gray-500 my-2 ">
+          <h2 className="text-[14px] text-gray-500 my-2  ">
             {selectedTechnologies.length} Technology Selected
           </h2>
           {selectedTechnologies.map((SelectedTechnology) => {
@@ -60,7 +60,7 @@ export default function SelectedTechnologies({
 
           <button
             onClick={() => handleRemoveAll()}
-            className="border border-brand hover:bg-brand hover:text-white font-semibold text-base lg:text-lg text-brand px-5 py-2 my-2 mt-6 w-full rounded-2xl transition-colors duration-200"
+            className="border border-brand hover:bg-brand hover:text-white font-semibold text-base lg:text-[15px] text-brand px-5 py-2 my-2 mt-4 w-full rounded-2xl transition-colors duration-200"
           >
             Remove All
           </button>

@@ -16,7 +16,7 @@ export default function ExploreTechnologies({
     <technologyType[]>([]);
 
   return (
-    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-16 ">
       <div className="text-center md:text-left">
         <h2 className="text-3xl md:text-5xl font-bold">
           Explore{" "}
